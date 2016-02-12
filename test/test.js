@@ -15,3 +15,12 @@ describe('LeapYear Test 2', function() {
     expect(code.leapYear(2032)).to.equal(true);
   });
 });
+
+describe('LeapYear Test 3', function() {
+  it('Will tell us correctly that any year divisible by 100 and not 400 are not Leap Years', function(){
+    expect(code.leapYear(500)).to.equal(false);
+    expect(code.leapYear(200)).to.equal(false);
+    expect(code.leapYear(2100)).to.equal(false);
+    expect(code.leapYear(2500)).to.equal(false);
+  });
+});
