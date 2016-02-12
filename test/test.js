@@ -24,3 +24,13 @@ describe('LeapYear Test 3', function() {
     expect(code.leapYear(2500)).to.equal(false);
   });
 });
+
+describe('LeapYear Test 4', function() {
+  it('Will tell us correctly that 1600 and 2000 are Leap Years, but 1700, 1800, and 1900 are not', function(){
+    expect(code.leapYear(1600)).to.equal(true);
+    expect(code.leapYear(2000)).to.equal(true);
+    expect(code.leapYear(1700)).to.equal(false);
+    expect(code.leapYear(1800)).to.equal(false);
+    expect(code.leapYear(1900)).to.equal(false);
+  });
+});
